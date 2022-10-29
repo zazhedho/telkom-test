@@ -10,7 +10,7 @@ Backend API Shopping Cart with Gorilla/Mux HTTP Response Framework, GORM for Obj
 go run .
 ```
 
-2. For answer no. 03 - 05 i put in a folder task_3-5, open the .md file
+2. For answer no.3-5 i put in a folder task3-5, open the .md file
 
 ## 🛠️ Installation Steps
 
