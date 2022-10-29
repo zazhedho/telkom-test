@@ -1,16 +1,6 @@
 # Api-Cart
 
-Mini Service Shopping Cart with Gorilla/Mux HTTP Respons Framework, GORM for Object relation model, PostgreSQL for database.
-
-## 🔗 Description
-
-This Backend Service Shopping Cart is used for simple add product to cart.
-There are 3 main routers :
-
-1. Add Cart (Can add product if product is no exist also update quantity product if name product exist)
-   > Attributes ProductCode, ProductName, Quantity
-2. Delete Product (Delete by product code)
-3. Get Product (Get all product, Get by product name, Get by quantity)
+Backend API Shopping Cart with Gorilla/Mux HTTP Response Framework, GORM for Object relation model, PostgreSQL for database.
 
 ## Notes :
 
