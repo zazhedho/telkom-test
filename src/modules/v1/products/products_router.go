@@ -13,6 +13,7 @@ func New(rt *mux.Router, db *gorm.DB) {
 	ctrl := NewCtrl(svc)
 
 	route.HandleFunc("/name", ctrl.SortByName).Methods("GET")
+	route.HandleFunc("/qty", ctrl.SortByQty).Methods("GET")
 	route.HandleFunc("", ctrl.GetAllProducts).Methods("GET")
 	route.HandleFunc("", ctrl.AddProduct).Methods("POST")
 	route.HandleFunc("/{id}", ctrl.UpdateProduct).Methods("PUT")

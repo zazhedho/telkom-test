@@ -72,3 +72,18 @@ func (re *product_repo) SortByName(name string, data *models.Products) (*models.
 
 	return data, nil
 }
+
+func (re *product_repo) SortByQty(qty int, data *models.Products) (*models.Products, error) {
+	result := re.db.Order("created_at desc").Where("kuantitas = ?", qty).Find(&data)
+
+	if result.Error != nil {
+		return nil, errors.New("gagal mengambil data")
+	}
+
+	if result.RowsAffected == 0 {
+		return nil, errors.New("data product tidak ditemukan")
+	}
+
+	return data, nil
+
+}

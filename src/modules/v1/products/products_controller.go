@@ -69,3 +69,15 @@ func (c *product_ctrl) SortByName(w http.ResponseWriter, r *http.Request) {
 	name := strings.ToLower(r.URL.Query().Get("name"))
 	c.svc.SortByName(name, &data).Send(w)
 }
+
+func (c *product_ctrl) SortByQty(w http.ResponseWriter, r *http.Request) {
+	var data models.Products
+	var dataQty = r.URL.Query()
+	qty, err := strconv.Atoi(dataQty["kuantitas"][0])
+	if err != nil {
+		helpers.New(err, 500, true)
+		return
+	}
+
+	c.svc.SortByQty(qty, &data).Send(w)
+}

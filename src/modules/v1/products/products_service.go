@@ -56,3 +56,12 @@ func (s *product_service) SortByName(name string, data *models.Products) *helper
 
 	return helpers.New(result, 200, false)
 }
+
+func (s *product_service) SortByQty(qty int, data *models.Products) *helpers.Response {
+	result, err := s.repo.SortByQty(qty, data)
+	if err != nil {
+		return helpers.New(err.Error(), 404, true)
+	}
+
+	return helpers.New(result, 200, false)
+}
