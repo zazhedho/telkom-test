@@ -170,4 +170,4 @@ kuantitas = (input quantity)
 
 ## 🚀 About Me
 
-- Linkedin : [Zaidus Zhuhur](https://www.linkedin.com/in/zaidus-zhuhur/)
+- LinkedIn : [Zaidus Zhuhur](https://www.linkedin.com/in/zaidus-zhuhur/)
